@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Modelos</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: rgba(255, 255, 255, 0.08);
+        --text: #e2e8f0;
+        --muted: #cbd5e1;
+        --accent: #38bdf8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 55%);
+        display: grid;
+        place-items: center;
+        padding: 2rem 1rem;
+      }
+
+      main {
+        width: min(900px, 100%);
+        background: var(--card);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 20px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.45);
+        overflow: hidden;
+      }
+
+      header {
+        padding: 2rem;
+        text-align: center;
+        background: linear-gradient(160deg, rgba(56, 189, 248, 0.2), rgba(15, 23, 42, 0));
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+      }
+
+      p {
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 1rem 1.5rem 1.75rem;
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      li {
+        background: rgba(15, 23, 42, 0.65);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 14px;
+        padding: 1rem;
+        transition: transform 0.18s ease, border-color 0.18s ease;
+      }
+
+      li:hover {
+        transform: translateY(-2px);
+        border-color: rgba(56, 189, 248, 0.7);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .desc {
+        margin-top: 0.35rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Página de Modelos</h1>
+        <p>Links úteis com descrições curtas para navegação rápida.</p>
+      </header>
+
+      <ul>
+        <li>
+          <a href="https://github.com/crivano/pagina-modelos" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a>
+          <div class="desc">Código-fonte da página e histórico das alterações.</div>
+        </li>
+        <li>
+          <a href="https://docs.github.com/pages" target="_blank" rel="noopener noreferrer">Documentação do GitHub Pages</a>
+          <div class="desc">Guia oficial para publicação de sites estáticos no GitHub.</div>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML na MDN</a>
+          <div class="desc">Referência completa de elementos e boas práticas de HTML.</div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

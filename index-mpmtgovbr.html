@@ -6,11 +6,11 @@
     <title>Página de Modelos</title>
     <style>
       :root {
-        --bg: #0f172a;
+        --bg: #0f2a17;
         --card: rgba(255, 255, 255, 0.08);
-        --text: #e2e8f0;
-        --muted: #cbd5e1;
-        --accent: #38bdf8;
+        --text: #e2f0e8;
+        --muted: #cbe1d5;
+        --accent: #38f8bd;
       }
 
       * {
@@ -22,7 +22,7 @@
         min-height: 100vh;
         font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
         color: var(--text);
-        background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 55%);
+        background: radial-gradient(circle at top, #1e3b29 0%, var(--bg) 55%);
         display: grid;
         place-items: center;
         padding: 2rem 1rem;
@@ -31,7 +31,7 @@
       main {
         width: min(900px, 100%);
         background: var(--card);
-        border: 1px solid rgba(148, 163, 184, 0.25);
+        border: 1px solid rgba(148, 184, 163, 0.25);
         border-radius: 20px;
         backdrop-filter: blur(8px);
         box-shadow: 0 20px 60px rgba(15, 23, 42, 0.45);
@@ -41,7 +41,7 @@
       header {
         padding: 2rem;
         text-align: center;
-        background: linear-gradient(160deg, rgba(56, 189, 248, 0.2), rgba(15, 23, 42, 0));
+        background: linear-gradient(160deg, rgba(56, 248, 189, 0.2), rgba(15, 42, 23, 0));
       }
 
       h1 {
@@ -63,8 +63,8 @@
       }
 
       li {
-        background: rgba(15, 23, 42, 0.65);
-        border: 1px solid rgba(148, 163, 184, 0.25);
+        background: rgba(15, 42, 23, 0.65);
+        border: 1px solid rgba(148, 184, 163, 0.25);
         border-radius: 14px;
         padding: 1rem;
         transition: transform 0.18s ease, border-color 0.18s ease;
@@ -72,7 +72,7 @@
 
       li:hover {
         transform: translateY(-2px);
-        border-color: rgba(56, 189, 248, 0.7);
+        border-color: rgba(56, 248, 189, 0.7);
       }
 
       a {
@@ -95,12 +95,12 @@
     <main>
       <header>
         <h1>Criar Novo Processo Administrativo</h1>
-        <p>Esta página permite que <strong>cidadãos</strong> cadastrem demandas através de documentos. Também é possível visualizar o andamento de processos já iniciados, clicando <a href="https://siga.gdgi.com.br/sigaex/app/expediente/doc/mesa-usuario-externo">aqui</a>.</p>
+        <p>Esta página permite que <strong>procuradores</strong> cadastrem demandas através de documentos. Também é possível visualizar o andamento de processos já iniciados, clicando <a href="https://siga.gdgi.com.br/sigaex/app/expediente/doc/mesa-usuario-externo">aqui</a>.</p>
       </header>
 
       <ul>
         <li>
-          <a href="https://siga.gdgi.com.br/sigaex/app/expediente/doc/editar?modelo=pge-revisa-usuario-externo-abertura-do-processo-01-requerimento-de-revisao-de-debito" target="_blank" rel="noopener noreferrer">Requerimento REVISA de Teste</a>
+          <a href="https://siga.gdgi.com.br/sigaex/app/expediente/doc/editar?modelo=pge-usuario-externo-acordo-de-nao-persecucao-civel-01-formulario-sobre-acordo-de-nao-persecucao-civel" target="_blank" rel="noopener noreferrer">Formulário sobre acordo de não persecução cível de Teste</a>
           <div class="desc">Este é um modelo de teste do Requerimento de Revisão de Débitos Tributários.</div>
         </li>
         <li>
